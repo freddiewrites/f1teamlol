@@ -72,11 +72,12 @@ function copyToClipboard() {
     // Display the alert within the page
     const alertElement = document.getElementById('alert');
     alertElement.innerText = 'Random team name copied to clipboard!';
+    alertElement.style.top = '10px'; // Slide in from the top
     alertElement.style.display = 'block';
 
     // Hide the alert after 3 seconds
     setTimeout(() => {
-        alertElement.style.display = 'none';
+        alertElement.style.top = '-100px'; // Slide up to hide
     }, 3000);
 }
 
