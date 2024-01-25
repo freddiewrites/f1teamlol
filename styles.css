@@ -12,7 +12,7 @@ body {
 
 .container {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px; /* Add padding to the container */
 }
 
 label {
@@ -31,6 +31,8 @@ button {
     color: #ffffff; /* Button text color */
     border: none;
     border-radius: 5px;
+    width: 100%; /* Make the select and button elements full-width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 select:hover,
@@ -41,6 +43,7 @@ button:hover {
 #disclaimer {
     margin-top: 20px;
     font-size: 14px;
+    line-height: 1.5; /* Increase line height */
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
