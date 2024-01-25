@@ -35,3 +35,11 @@ select:hover,
 button:hover {
     background-color: #4fa3d1; /* Darker button color on hover */
 }
+
+#disclaimer {
+    margin-top: 20px;
+    font-size: 14px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
