@@ -1,5 +1,15 @@
-let brandNamesUS = ['Pepsi', 'Nike', 'Apple', 'Amazon', 'Disney', 'McDonald\'s', 'Google', 'Microsoft', 'Adidas', 'Samsung', 'Sony', 'Toyota', 'Ford', 'BMW', 'Mercedes-Benz', 'Volkswagen', 'Honda', 'Nissan'];
-let brandNamesUK = ['Tesco', 'Sainsbury\'s', 'Asda', 'Morrisons', 'Boots', 'Marks & Spencer', 'John Lewis', 'British Airways', 'Virgin', 'HSBC', 'Barclays', 'Lloyds', 'NatWest', 'RBS'];
+let brandNamesUS = ['Pepsi', 'Nike', 'Apple', 'Amazon', 'Disney', 'McDonald\'s', 'Google', 'Microsoft', 'Adidas', 'Samsung', 'Sony', 'Toyota', 'Ford', 'BMW', 'Mercedes-Benz', 'Volkswagen', 'Honda', 'Nissan','Google', 'Facebook', 'YouTube', 'Amazon', 'Twitter', 'Instagram',
+    'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft',
+    'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp',
+    'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal',
+    'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic',
+    'BuzzFeed'];
+let brandNamesUK = ['Tesco', 'Sainsbury\'s', 'Asda', 'Morrisons', 'Boots', 'Marks & Spencer', 'John Lewis', 'British Airways', 'Virgin', 'HSBC', 'Barclays', 'Lloyds', 'NatWest', 'RBS', 'Google', 'Facebook', 'YouTube', 'Amazon', 'Twitter', 'Instagram',
+    'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft',
+    'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp',
+    'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal',
+    'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic',
+    'BuzzFeed'];
 
 let selectedBrandNames = brandNamesUS;
 
