@@ -34,6 +34,11 @@ let brandNamesUK = ['Tesco', 'Sainsbury\'s', 'Asda', 'Morrisons', 'Boots', 'Mark
 
 let selectedBrandNames = brandNamesUS;
 
+function isMobileSafari() {
+    const userAgent = navigator.userAgent;
+    return /iP(ad|hone|od).*Version\/\d.*Safari/i.test(userAgent);
+}
+
 function changeBrandOrigin() {
     const brandSelector = document.getElementById('brandSelector');
     selectedBrandNames = brandSelector.value === 'us' ? brandNamesUS : brandNamesUK;
@@ -57,11 +62,6 @@ function generateRandomName() {
     }
 
     return result.trim() + ' F1 Team';
-}
-
-function isMobileSafari() {
-    const userAgent = navigator.userAgent;
-    return /iP(ad|hone|od).*Version\/\d.*Safari/i.test(userAgent);
 }
 
 function share() {
