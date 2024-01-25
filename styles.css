@@ -45,3 +45,17 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
+#copyButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+#copyButton:hover {
+    background-color: #4fa3d1;
+}
