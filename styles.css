@@ -32,6 +32,15 @@ button {
     border: none;
     border-radius: 5px;
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+
+    /* Override browser-specific styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none; /* Hide the arrow on Internet Explorer and Microsoft Edge */
 }
 
 select:hover,
