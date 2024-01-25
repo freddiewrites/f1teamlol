@@ -13,7 +13,6 @@ body {
 .container {
     text-align: center;
     margin-bottom: 20px;
-    flex-grow: 1; /* Allow the container to grow and push the disclaimer to the bottom */
 }
 
 label {
