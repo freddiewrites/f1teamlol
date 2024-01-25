@@ -37,6 +37,23 @@ label {
     transition: top 0.5s ease-in-out; /* Smooth transition for top property */
 }
 
+/* Default link styles */
+a {
+    color: #f0f0f0; /* Not quite white */
+    text-decoration: underline;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Hover state */
+a:hover {
+    color: #ffffff; /* Full white on hover */
+}
+
+/* Clicked state */
+a:active {
+    color: #ffffff; /* Full white on click */
+}
+
 select,
 button {
     margin-top: 10px;
