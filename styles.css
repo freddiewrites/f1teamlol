@@ -31,7 +31,6 @@ button {
     color: #ffffff; /* Button text color */
     border: none;
     border-radius: 5px;
-    width: 100%; /* Make the select and button elements full-width */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
