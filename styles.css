@@ -21,9 +21,10 @@ label {
     font-size: 18px;
 }
 
+/* Add styles for the alert */
 .alert {
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     display: none;
@@ -32,6 +33,7 @@ label {
     background-color: #4CAF50; /* Green color for the alert */
     color: #fff;
     border-radius: 5px;
+    transition: top 0.5s ease-in-out; /* Smooth transition for top property */
 }
 
 select,
