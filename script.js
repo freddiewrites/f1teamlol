@@ -37,6 +37,7 @@ let selectedBrandNames = brandNamesUS;
 function changeBrandOrigin() {
     const brandSelector = document.getElementById('brandSelector');
     selectedBrandNames = brandSelector.value === 'us' ? brandNamesUS : brandNamesUK;
+    generateName(); // Automatically generate a name when changing the brand origin
 }
 
 function generateName() {
@@ -60,7 +61,7 @@ function generateRandomName() {
 
 function copyToClipboard() {
     const randomName = document.getElementById('randomName').innerText;
-    
+
     const textarea = document.createElement('textarea');
     textarea.value = randomName;
     document.body.appendChild(textarea);
@@ -68,5 +69,18 @@ function copyToClipboard() {
     document.execCommand('copy');
     document.body.removeChild(textarea);
 
-    alert('Random team name copied to clipboard!');
+    // Display the alert within the page
+    const alertElement = document.getElementById('alert');
+    alertElement.innerText = 'Random team name copied to clipboard!';
+    alertElement.style.display = 'block';
+
+    // Hide the alert after 3 seconds
+    setTimeout(() => {
+        alertElement.style.display = 'none';
+    }, 3000);
 }
+
+// Automatically generate a random team name on page load
+window.onload = function () {
+  changeBrandOrigin();
+};
