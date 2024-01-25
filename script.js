@@ -3,13 +3,33 @@ let brandNamesUS = ['Pepsi', 'Nike', 'Apple', 'Amazon', 'Disney', 'McDonald\'s',
     'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp',
     'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal',
     'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic',
-    'BuzzFeed'];
+    'BuzzFeed', 'AOL', 'Netscape', 'Yahoo!', 'MSN', 'GeoCities', 'MySpace',
+    'Hotmail', 'Napster', 'Altavista', 'Lycos', 'Angelfire',
+    'ICQ', 'Friendster', 'Ask Jeeves', 'AltaVista', 'CompuServe',
+    'LiveJournal', 'Excite', 'Tripod', 'Xanga', 'Delicious',
+    'Digg', 'RealPlayer', 'E*TRADE', 'Pets.com', 'EarthLink',
+    'Bebo', 'Orkut', 'Flickr', 'Webshots', 'McDonald\'s', 'Burger King', 'Wendy\'s', 'Subway', 'Pizza Hut', 'Domino\'s',
+    'KFC', 'Taco Bell', 'Denny\'s', 'IHOP', 'Arby\'s', 'Starbucks',
+    'Outback Steakhouse', 'Red Lobster', 'Chili\'s', 'Olive Garden', 'Applebee\'s',
+    'Buffalo Wild Wings', 'Cheesecake Factory', 'Cracker Barrel', 'Ruby Tuesday',
+    'Papa John\'s', 'Panera Bread', 'Sonic Drive-In', 'Jack in the Box',
+    'Texas Roadhouse', 'LongHorn Steakhouse', 'Chipotle', 'Five Guys'];
 let brandNamesUK = ['Tesco', 'Sainsbury\'s', 'Asda', 'Morrisons', 'Boots', 'Marks & Spencer', 'John Lewis', 'British Airways', 'Virgin', 'HSBC', 'Barclays', 'Lloyds', 'NatWest', 'RBS', 'Google', 'Facebook', 'YouTube', 'Amazon', 'Twitter', 'Instagram',
     'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft',
     'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp',
     'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal',
     'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic',
-    'BuzzFeed'];
+    'BuzzFeed', 'AOL', 'Netscape', 'Yahoo!', 'MSN', 'GeoCities', 'MySpace',
+    'Hotmail', 'Napster', 'Altavista', 'Lycos', 'Angelfire',
+    'ICQ', 'Friendster', 'Ask Jeeves', 'AltaVista', 'CompuServe',
+    'LiveJournal', 'Excite', 'Tripod', 'Xanga', 'Delicious',
+    'Digg', 'RealPlayer', 'E*TRADE', 'Pets.com', 'EarthLink',
+    'Bebo', 'Orkut', 'Flickr', 'Webshots', 'Nando\'s', 'Wagamama', 'PizzaExpress', 'Café Rouge', 'Prezzo', 'Zizzi',
+    'Bella Italia', 'Pizza Hut', 'McDonald\'s', 'Burger King', 'KFC', 'Subway',
+    'Greggs', 'Costa Coffee', 'Pret A Manger', 'Caffè Nero', 'Yo! Sushi',
+    'Wetherspoon', 'Harvester', 'Frankie & Benny\'s', 'Toby Carvery', 'Miller & Carter',
+    'BrewDog', 'Gourmet Burger Kitchen (GBK)', 'The Ivy', 'Dishoom', 'Wahaca',
+    'Giraffe', 'Leon'];
 
 let selectedBrandNames = brandNamesUS;
 
