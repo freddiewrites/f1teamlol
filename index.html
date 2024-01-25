@@ -9,11 +9,11 @@
 <body>
     <div class="container">
         <h1 id="randomName">Click the button to generate a name</h1>
-        <label for="brandSelector">
-            Select Brand Origin:
-            <span id="ukFlag" class="flag" onclick="selectBrandOrigin('uk')">🇬🇧</span>
-            <span id="usFlag" class="flag" onclick="selectBrandOrigin('us')">🇺🇸</span>
-        </label>
+        <label for="brandSelector">Select Brand Origin:</label>
+        <select id="brandSelector" onchange="changeBrandOrigin()">
+            <option value="us">🇺🇸 US Brands</option>
+            <option value="uk">🇬🇧 UK Brands</option>
+        </select>
         <button onclick="generateName()">Generate Name</button>
         <button onclick="copyToClipboard()">Copy to Clipboard</button>
         <p id="disclaimer">This random name generator is just silly; I don't own any brand names, it's not endorsed by anyone, and I hope Liberty Media doesn't sue me. If you’re a brand and would prefer not to see your name here, you can email f1teamlol@freddiewrit.es and I’ll remove it.</p>
