@@ -27,7 +27,7 @@ button {
     padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
-    background-color: #61dafb; /* Button background color */
+    background-color: #d91e18; /* Red background color */
     color: #ffffff; /* Button text color */
     border: none;
     border-radius: 5px;
@@ -36,7 +36,7 @@ button {
 
 select:hover,
 button:hover {
-    background-color: #4fa3d1; /* Darker button color on hover */
+    background-color: #a61711; /* Darker red on hover */
 }
 
 #disclaimer {
