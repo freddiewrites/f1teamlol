@@ -44,13 +44,29 @@ function generateName() {
 }
 
 function generateRandomName() {
+    let uniqueBrandNames = selectedBrandNames.slice(); // Create a copy to avoid modifying the original array
     let result = '';
-    const numBrands = Math.floor(Math.random() * 5) + 1; // Randomly choose between 1 and 5 brands
+    const numBrands = Math.min(Math.floor(Math.random() * 5) + 1, uniqueBrandNames.length); // Ensure we don't exceed the number of available brands
 
     for (let i = 0; i < numBrands; i++) {
-        const randomIndex = Math.floor(Math.random() * selectedBrandNames.length);
-        result += selectedBrandNames[randomIndex] + ' ';
+        const randomIndex = Math.floor(Math.random() * uniqueBrandNames.length);
+        result += uniqueBrandNames[randomIndex] + ' ';
+        uniqueBrandNames.splice(randomIndex, 1); // Remove the selected brand to avoid repetition
     }
 
     return result.trim() + ' F1 Team';
+}
+
+function copyToClipboard() {
+    const randomName = document.getElementById('randomName').innerText;
+    
+    // Create a temporary textarea to copy text to clipboard
+    const textarea = document.createElement('textarea');
+    textarea.value = randomName;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+
+    alert('Random team name copied to clipboard!');
 }
