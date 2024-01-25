@@ -21,6 +21,16 @@ label {
     font-size: 18px;
 }
 
+.alert {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green color for the alert */
+    color: #fff;
+    border-radius: 5px;
+}
+
 select,
 button {
     margin-top: 10px;
