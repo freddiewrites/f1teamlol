@@ -59,6 +59,31 @@ function generateRandomName() {
     return result.trim() + ' F1 Team';
 }
 
+function isMobileSafari() {
+    const userAgent = navigator.userAgent;
+    return /iP(ad|hone|od).*Version\/\d.*Safari/i.test(userAgent);
+}
+
+function share() {
+    const randomName = document.getElementById('randomName').innerText;
+
+    // Check if the browser is Mobile Safari
+    if (isMobileSafari()) {
+        // Trigger the iOS share sheet
+        const shareData = {
+            title: 'Random F1 Team Name',
+            text: randomName,
+        };
+
+        navigator.share(shareData)
+            .then(() => console.log('Shared successfully'))
+            .catch((error) => console.error('Error sharing:', error));
+    } else {
+        // For non-Mobile Safari browsers, perform the copy to clipboard functionality
+        copyToClipboard();
+    }
+}
+
 function copyToClipboard() {
     const randomName = document.getElementById('randomName').innerText;
 
