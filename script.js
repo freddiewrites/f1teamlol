@@ -1,83 +1,49 @@
-let brandNamesUS = ['Pepsi', 'Nike', 'Apple', 'Amazon', 'Disney', 'McDonald\'s', 'Google', 'Microsoft', 'Adidas', 'Samsung', 'Sony', 'Toyota', 'Ford', 'BMW', 'Mercedes-Benz', 'Volkswagen', 'Honda', 'Nissan','Google', 'Facebook', 'YouTube', 'Amazon', 'Twitter', 'Instagram',
-    'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft',
-    'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp',
-    'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal',
-    'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic',
-    'BuzzFeed', 'AOL', 'Netscape', 'Yahoo!', 'MSN', 'GeoCities', 'MySpace',
-    'Hotmail', 'Napster', 'Altavista', 'Lycos', 'Angelfire',
-    'ICQ', 'Friendster', 'Ask Jeeves', 'AltaVista', 'CompuServe',
-    'LiveJournal', 'Excite', 'Tripod', 'Xanga', 'Delicious',
-    'Digg', 'RealPlayer', 'E*TRADE', 'Pets.com', 'EarthLink',
-    'Bebo', 'Orkut', 'Flickr', 'Webshots', 'McDonald\'s', 'Burger King', 'Wendy\'s', 'Subway', 'Pizza Hut', 'Domino\'s',
-    'KFC', 'Taco Bell', 'Denny\'s', 'IHOP', 'Arby\'s', 'Starbucks',
-    'Outback Steakhouse', 'Red Lobster', 'Chili\'s', 'Olive Garden', 'Applebee\'s',
-    'Buffalo Wild Wings', 'Cheesecake Factory', 'Cracker Barrel', 'Ruby Tuesday',
-    'Papa John\'s', 'Panera Bread', 'Sonic Drive-In', 'Jack in the Box',
-    'Texas Roadhouse', 'LongHorn Steakhouse', 'Chipotle', 'Five Guys'];
-let brandNamesUK = ['Tesco', 'Sainsbury\'s', 'Asda', 'Morrisons', 'Boots', 'Marks & Spencer', 'John Lewis', 'British Airways', 'Virgin', 'HSBC', 'Barclays', 'Lloyds', 'NatWest', 'RBS', 'Google', 'Facebook', 'YouTube', 'Amazon', 'Twitter', 'Instagram',
-    'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft',
-    'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp',
-    'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal',
-    'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic',
-    'BuzzFeed', 'AOL', 'Netscape', 'Yahoo!', 'MSN', 'GeoCities', 'MySpace',
-    'Hotmail', 'Napster', 'Altavista', 'Lycos', 'Angelfire',
-    'ICQ', 'Friendster', 'Ask Jeeves', 'AltaVista', 'CompuServe',
-    'LiveJournal', 'Excite', 'Tripod', 'Xanga', 'Delicious',
-    'Digg', 'RealPlayer', 'E*TRADE', 'Pets.com', 'EarthLink',
-    'Bebo', 'Orkut', 'Flickr', 'Webshots', 'Nando\'s', 'Wagamama', 'PizzaExpress', 'Café Rouge', 'Prezzo', 'Zizzi',
-    'Bella Italia', 'Pizza Hut', 'McDonald\'s', 'Burger King', 'KFC', 'Subway',
-    'Greggs', 'Costa Coffee', 'Pret A Manger', 'Caffè Nero', 'Yo! Sushi',
-    'Wetherspoon', 'Harvester', 'Frankie & Benny\'s', 'Toby Carvery', 'Miller & Carter',
-    'BrewDog', 'Gourmet Burger Kitchen (GBK)', 'The Ivy', 'Dishoom', 'Wahaca',
-    'Giraffe', 'Leon'];
-let brandNamesAU = [
-    // Popular Retail Stores
-    'Kmart',
-    'Target Australia',
-    'Cotton On',
-    'David Jones',
-    'Myer',
-    'JB Hi-Fi',
-    'Harvey Norman',
-    'The Good Guys',
-    'Bunnings Warehouse',
-    'Big W',
-
-    // Popular Restaurants
-    'McDonald\'s',
-    'KFC',
-    'Subway',
-    'Pizza Hut',
-    'Outback Steakhouse',
-    'Hog\'s Breath Cafe',
-    'Grill\'d',
-    'Nando\'s',
-    'Zambrero',
-    'Schnitz',
-
-    // Popular Snack Foods
-    'Arnott\'s',
-    'Vegemite',
-    'Tim Tam',
-    'Shapes',
-    'Milo',
-    'Fantales',
-    'Twisties',
-    'Cherry Ripe',
-    'Paddle Pop',
-    'Golden Gaytime',
-
-    // Retro Brands (No Longer Around)
-    'Grace Bros',
-    'Crazy Clark\'s',
-    'Franklins',
-    'Dick Smith Electronics',
-    'Go-Lo',
-    'Sizzler Australia',
-    'Bushells',
-    'Rosella',
-    'Mandarin',
+let brandNamesUS = [
+    'Pepsi', 'Nike', 'Apple', 'Amazon', 'Disney', 'McDonald\'s', 'Google', 'Microsoft', 'Adidas', 'Samsung',
+    'Sony', 'Toyota', 'Ford', 'BMW', 'Mercedes-Benz', 'Volkswagen', 'Honda', 'Nissan', 'Google', 'Facebook',
+    'YouTube', 'Amazon', 'Twitter', 'Instagram', 'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft',
+    'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp', 'Snapchat', 'Dropbox', 'Yahoo', 'WordPress',
+    'GitHub', 'PayPal', 'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic', 'BuzzFeed', 'AOL',
+    'Netscape', 'Yahoo!', 'MSN', 'GeoCities', 'MySpace', 'Hotmail', 'Napster', 'Altavista', 'Lycos', 'Angelfire',
+    'ICQ', 'Friendster', 'Ask Jeeves', 'CompuServe', 'LiveJournal', 'Excite', 'Tripod', 'Xanga', 'Delicious', 'Digg',
+    'RealPlayer', 'E*TRADE', 'Pets.com', 'EarthLink', 'Bebo', 'Orkut', 'Flickr', 'Webshots', 'Burger King', 'Subway',
+    'Pizza Hut', 'Domino\'s', 'KFC', 'Taco Bell', 'Denny\'s', 'IHOP', 'Arby\'s', 'Starbucks', 'Outback Steakhouse',
+    'Red Lobster', 'Chili\'s', 'Olive Garden', 'Applebee\'s', 'Buffalo Wild Wings', 'Cheesecake Factory', 'Cracker Barrel',
+    'Ruby Tuesday', 'Papa John\'s', 'Panera Bread', 'Sonic Drive-In', 'Jack in the Box', 'Texas Roadhouse',
+    'LongHorn Steakhouse', 'Chipotle', 'Five Guys'
 ];
+
+let brandNamesUK = [
+    'Tesco', 'Sainsbury\'s', 'Asda', 'Morrisons', 'Boots', 'Marks & Spencer', 'John Lewis', 'British Airways', 'Virgin',
+    'HSBC', 'Barclays', 'Lloyds', 'NatWest', 'RBS', 'Google', 'Facebook', 'YouTube', 'Amazon', 'Twitter', 'Instagram',
+    'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft', 'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb',
+    'WhatsApp', 'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal', 'CNN', 'BBC', 'The New York Times',
+    'Forbes', 'National Geographic', 'BuzzFeed', 'AOL', 'Netscape', 'Yahoo!', 'MSN', 'GeoCities', 'MySpace', 'Hotmail',
+    'Napster', 'Altavista', 'Lycos', 'Angelfire', 'ICQ', 'Friendster', 'Ask Jeeves', 'CompuServe', 'LiveJournal',
+    'Excite', 'Tripod', 'Xanga', 'Delicious', 'Digg', 'RealPlayer', 'E*TRADE', 'Pets.com', 'EarthLink', 'Bebo', 'Orkut',
+    'Flickr', 'Webshots', 'Nando\'s', 'Wagamama', 'PizzaExpress', 'Café Rouge', 'Prezzo', 'Zizzi', 'Bella Italia',
+    'Pizza Hut', 'McDonald\'s', 'Burger King', 'KFC', 'Subway', 'Greggs', 'Costa Coffee', 'Pret A Manger',
+    'Caffè Nero', 'Yo! Sushi', 'Wetherspoon', 'Harvester', 'Frankie & Benny\'s', 'Toby Carvery', 'Miller & Carter',
+    'BrewDog', 'Gourmet Burger Kitchen (GBK)', 'The Ivy', 'Dishoom', 'Wahaca', 'Giraffe', 'Leon'
+];
+
+let brandNamesAU = [
+    'Kmart', 'Target Australia', 'Cotton On', 'David Jones', 'Myer', 'JB Hi-Fi', 'Harvey Norman', 'The Good Guys', 'Bunnings Warehouse', 'Big W',
+    'McDonald\'s', 'KFC', 'Subway', 'Pizza Hut', 'Outback Steakhouse', 'Hog\'s Breath Cafe', 'Grill\'d', 'Nando\'s', 'Zambrero', 'Schnitz',
+    'Arnott\'s', 'Vegemite', 'Tim Tam', 'Shapes', 'Milo', 'Fantales', 'Twisties', 'Cherry Ripe', 'Paddle Pop', 'Golden Gaytime',
+    'Grace Bros', 'Crazy Clark\'s', 'Franklins', 'Dick Smith Electronics', 'Go-Lo', 'Sizzler Australia', 'Bushells', 'Rosella', 'Mandarin',
+    'Gumtree', 'Carsales.com.au', 'REA Group', 'Domain', 'Seek', 'Airtasker', 'Canva', 'Atlassian', 'Afterpay', 'Zip Co',
+    'SafetyCulture', 'Wotif', 'CarsGuide', 'Hipages', 'Redbubble', 'Finder', 'Whirlpool', 'MenuLog', 'Airwallex', 'Atlassian',
+    'Redbubble', 'Envato', 'Airtasker', 'Canva', 'Culture Amp', 'Afterpay', 'Zip Co', 'SafetyCulture', 'Catch.com.au', 'Wotif',
+    'CarsGuide', 'Hipages', 'Redbubble', 'Finder', 'Whirlpool', 'MenuLog', 'Airwallex', 'CarsGuide', 'Hipages', 'Redbubble',
+    'Finder', 'Whirlpool', 'MenuLog', 'Airwallex',
+    'Google', 'Facebook', 'YouTube', 'Amazon', 'Twitter', 'Instagram', 'LinkedIn', 'Pinterest', 'Reddit', 'Netflix', 'eBay', 'Microsoft',
+    'Apple', 'Wikipedia', 'Tumblr', 'Spotify', 'Airbnb', 'WhatsApp', 'Snapchat', 'Dropbox', 'Yahoo', 'WordPress', 'GitHub', 'PayPal',
+    'CNN', 'BBC', 'The New York Times', 'Forbes', 'National Geographic', 'BuzzFeed', 'AOL', 'Netscape', 'MSN', 'GeoCities', 'MySpace',
+    'Hotmail', 'Napster', 'Altavista', 'Lycos', 'Angelfire', 'ICQ', 'Friendster', 'Ask Jeeves', 'CompuServe', 'LiveJournal', 'Excite',
+    'Tripod', 'Xanga', 'Delicious', 'Digg', 'RealPlayer', 'E*TRADE', 'Pets.com', 'EarthLink', 'Bebo', 'Orkut', 'Flickr', 'Webshots'
+];
+
 
 
 let selectedBrandNames = brandNamesUS;
