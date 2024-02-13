@@ -30,6 +30,54 @@ let brandNamesUK = ['Tesco', 'Sainsbury\'s', 'Asda', 'Morrisons', 'Boots', 'Mark
     'Wetherspoon', 'Harvester', 'Frankie & Benny\'s', 'Toby Carvery', 'Miller & Carter',
     'BrewDog', 'Gourmet Burger Kitchen (GBK)', 'The Ivy', 'Dishoom', 'Wahaca',
     'Giraffe', 'Leon'];
+let brandNamesAU = [
+    // Popular Retail Stores
+    'Kmart',
+    'Target Australia',
+    'Cotton On',
+    'David Jones',
+    'Myer',
+    'JB Hi-Fi',
+    'Harvey Norman',
+    'The Good Guys',
+    'Bunnings Warehouse',
+    'Big W',
+
+    // Popular Restaurants
+    'McDonald\'s',
+    'KFC',
+    'Subway',
+    'Pizza Hut',
+    'Outback Steakhouse',
+    'Hog\'s Breath Cafe',
+    'Grill\'d',
+    'Nando\'s',
+    'Zambrero',
+    'Schnitz',
+
+    // Popular Snack Foods
+    'Arnott\'s',
+    'Vegemite',
+    'Tim Tam',
+    'Shapes',
+    'Milo',
+    'Fantales',
+    'Twisties',
+    'Cherry Ripe',
+    'Paddle Pop',
+    'Golden Gaytime',
+
+    // Retro Brands (No Longer Around)
+    'Grace Bros',
+    'Crazy Clark\'s',
+    'Franklins',
+    'Dick Smith Electronics',
+    'Go-Lo',
+    'Sizzler Australia',
+    'Bushells',
+    'Rosella',
+    'Mandarin',
+];
 
 
 let selectedBrandNames = brandNamesUS;
@@ -41,8 +89,16 @@ function isMobileSafari() {
 
 function changeBrandOrigin() {
     const brandSelector = document.getElementById('brandSelector');
-    selectedBrandNames = brandSelector.value === 'us' ? brandNamesUS : brandNamesUK;
-    generateName(); // Automatically generate a name when changing the brand origin
+    
+    if (brandSelector.value === 'us') {
+        selectedBrandNames = brandNamesUS;
+    } else if (brandSelector.value === 'uk') {
+        selectedBrandNames = brandNamesUK;
+    } else if (brandSelector.value === 'au') {
+        selectedBrandNames = brandNamesAU;
+    }
+
+    generateName();
 }
 
 function generateName() {
